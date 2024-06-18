@@ -13,7 +13,7 @@ public class Application2 {
         // 1. Connection 객체 생성
         Connection con = getConnection();
 
-        // 2. Statement 생성
+        // 2. Statement 생성 // 쿼리문을 작성해서 데이터베이스에 요청하기위해 사용하는 객체
         Statement stmt = null;
 
         // 3. ResultSet 생성 (SELECT 할 때만)

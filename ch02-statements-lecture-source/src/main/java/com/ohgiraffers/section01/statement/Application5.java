@@ -60,5 +60,12 @@ public class Application5 {
                 System.out.println(emp);
             }
         }
+
+        /*
+        * Statement의 문제점
+        * 1. 에러가 발생하면 쿼리가 그대로 드러난다.
+        * 2. 완전한 쿼리를 사용하다 보니, 조작이 가능해진다. (SQL Injection)
+        * 3. 많은 요청에 대한 성능 이슈
+        * */
     }
 }
