@@ -4,10 +4,7 @@ import com.ohgiraffers.model.EmployeeDTO;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -96,11 +93,15 @@ public class Application {
                         System.out.print("급여 등급: ");
                         String salLevel = sc.nextLine();
 
+                        System.out.print("고용 날짜: ");
+                        String hireDate = sc.nextLine();
+
                         pstmt.setInt(1, empId);
                         pstmt.setString(2, empName);
                         pstmt.setString(3, empNo);
                         pstmt.setString(4, jobCode);
                         pstmt.setString(5, salLevel);
+                        pstmt.setDate(6, Date.valueOf(hireDate));
 
                         result = pstmt.executeUpdate();
 

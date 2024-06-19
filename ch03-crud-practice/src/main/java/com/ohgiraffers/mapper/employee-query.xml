@@ -8,9 +8,9 @@
 
     <entry key="insertEmployee">
         INSERT INTO employee (
-            emp_id, emp_name, emp_no, job_code, sal_level
+            emp_id, emp_name, emp_no, job_code, sal_level, hire_date
             )
-        VALUES (?,?,?,?,?)
+        VALUES (?,?,?,?,?,?)
     </entry>
 
     <entry key="updateEmployee">
